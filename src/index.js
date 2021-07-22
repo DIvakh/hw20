@@ -80,6 +80,7 @@ $('.container').on('click', '.titleContainer', function () {
     const arrow = titleItems[firstElem];
 
     $(arrow).toggleClass('rotated');
+    $('.fas').not($(arrow)).addClass('rotated');
 
     $('.content').not($(target)).slideUp(timeout);
     $(target).slideToggle(timeout);
