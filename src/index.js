@@ -62,7 +62,7 @@ function contentCreator(arr) {
         $content.html(item.content);
         $content.addClass('content');
 
-        const $chevron = $('<i class="fas fa-chevron-left"></i>');
+        const $chevron = $('<i class="fas fa-chevron-left rotated"></i>');
 
         $titleContainer.append($title).append($chevron);
         $container.append($content);
@@ -78,9 +78,9 @@ $('.container').on('click', '.titleContainer', function () {
     const target = $(this).next();
     const titleItems = $(this).children();
     const arrow = titleItems[firstElem];
-    if (target.css('display') === 'none') {
-        $(arrow).addClass('rotated');
-    } else $(arrow).removeClass('rotated');
+
+    $(arrow).toggleClass('rotated');
+
     $('.content').not($(target)).slideUp(timeout);
     $(target).slideToggle(timeout);
 });

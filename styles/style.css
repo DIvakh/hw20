@@ -34,10 +34,3 @@ body {
 .rotated {
     transform: rotate(270deg);
 }
-.plug {
-    position: relative;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-}
