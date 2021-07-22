@@ -20,7 +20,7 @@ const accordionData = [
     },
     {
         title: 'Berlin',
-        content: `is the capital and largest city of Germany by both area and population. 
+        content: `Berlin is the capital and largest city of Germany by both area and population. 
             Its 3.8 million inhabitants make it the European Union's most populous city, 
             according to population within city limits. 
             One of Germany's sixteen constituent states, 
